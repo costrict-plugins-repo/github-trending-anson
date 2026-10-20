@@ -1,0 +1,76 @@
+# ANSON_META.md
+
+Durable install log for the anson-v2 bootstrap. Resumable — anson reads this file at session start and jumps to the first unchecked stage.
+
+## Environment
+
+- **Platform**: {{PLATFORM}}
+- **OS**: {{OS}}
+- **Workspace root**: `{{WORKSPACE_ROOT}}`
+- **Skills directory**: `{{WORKSPACE_ROOT}}/skills/`
+- **Anson run started**: {{INSTALL_STARTED_AT}}
+
+## Progress
+
+### Stage A — Self-intro + environment
+- [ ] A.1 Greeting delivered
+- [ ] A.2 Platform + OS detected
+- [ ] A.3 Workspace root chosen + created
+- [ ] A.4 Resume check
+- [ ] A.5 ANSON_META.md skeleton written
+
+### Stage B — Who are you? (generative maker-skill loop — see references/bootstrap-process.md)
+- [ ] B:1 Reconnaissance pass + prefills drafted
+- [ ] B:2 Meta interview for identity
+- [ ] B:3 identity-maker generated (skill-creator)
+- [ ] B:4 identity-maker run → IDENTITY.md
+- [ ] B:5 Meta interview for user
+- [ ] B:6 user-maker generated
+- [ ] B:7 user-maker run → USER.md
+- [ ] B:8 Meta interview for soul
+- [ ] B:9 soul-maker generated
+- [ ] B:10 soul-maker run → SOUL.md
+- [ ] B:11 v2 docs written (KEY_PEOPLE.md, MEMORY.md skeleton) + CLAUDE.md/AGENTS.md base rendered
+- [ ] B:12 agents-maker generated
+- [ ] B:13 agents-maker run → lifecycle block appended to AGENTS.md
+- [ ] B:14 Stage B finalized (4 maker skills confirmed installed)
+
+### Stage C — How do you work? (workflow discovery)
+- [ ] C.1 Daily shape
+- [ ] C.2 Where work comes at you
+- [ ] C.3 Where work lives
+- [ ] C.4 Rhythms (standups, sprints, digests)
+- [ ] C.5 Noisiest channel
+- [ ] C.6 One thing to free up time
+- **Workflow summary**: <fill in by anson>
+
+### Stage D — Install what the workflow needs
+- [ ] D.1 Install plan proposed + confirmed
+- [ ] D.2 note-management skill installed (always)
+- [ ] D.3 Integrations connected:
+  {{#INTEGRATIONS}}
+  - [ ] {{.}}
+  {{/INTEGRATIONS}}
+- [ ] D.4 Skills installed:
+  {{#SKILLS}}
+  - [ ] {{.}}
+  {{/SKILLS}}
+- [ ] D.5 Scheduled tasks registered
+- [ ] D.6 Slack bridge (optional)
+
+### Stage E — Custom workflows
+- [ ] Workflow 1: {{WORKFLOW_1_NAME}}
+- [ ] Workflow 2: {{WORKFLOW_2_NAME}}
+- [ ] Workflow 3: {{WORKFLOW_3_NAME}}
+
+### Stage F — Handoff
+- [ ] F.1 Inventory printed
+- [ ] F.2 Next steps confirmed
+
+## Decisions
+
+(append decisions as they're made; conflicts logged here)
+
+## Open items
+
+(things deferred or that need {{USER_PREFERRED_NAME}}'s follow-up)
